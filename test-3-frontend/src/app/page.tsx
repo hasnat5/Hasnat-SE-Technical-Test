@@ -132,7 +132,7 @@ export default function Home() {
             <Navbar />
 
 
-            <main>
+            <main className='max-w-md mx-auto'>
                 <section id='jumbotron'>
                     <div className='mt-24 py-5'>
 
@@ -605,7 +605,7 @@ export default function Home() {
 
             </main>
 
-            <footer className='bg-[#141414] p-4 py-4 grid'>
+            <footer className='bg-[#141414] p-4 py-4 grid max-w-md mx-auto'>
                 <div className='p-2.5'>
                     <div className='w-fit h-full'>
                         <div className='w-4/5'>

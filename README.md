@@ -25,7 +25,7 @@
 #### Soal no 3
 ![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/dev/demo-image/soal3.png?raw=true)
 
-#### Soal no 3 frontend
+#### Soal no 3 frontend (MOBILE ONLY)
 ![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/dev/demo-image/soal3fe.png?raw=true)
 ## Run Locally
 
@@ -69,11 +69,27 @@ Run the code
 
 
 
-### Soal no 3 Frontend
+### Soal no 3
 Go to the project directory
 
 ```bash
   cd test-3
+```
+
+Run the code
+
+```bash
+  node tes3.js
+```
+
+
+
+
+### Soal no 3 Frontend (MOBILE ONLY)
+Go to the project directory
+
+```bash
+  cd test-3-frontent
 ```
 
 Install dependencies
