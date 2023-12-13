@@ -1,8 +1,24 @@
-import { Button } from '@nextui-org/react'
+import { Button, Divider, Input, Textarea } from '@nextui-org/react'
 import Image from 'next/image'
+import Link from 'next/link'
 import 'remixicon/fonts/remixicon.css'
+import Navbar from './components/Navbar';
+import Services from './components/Services';
+import Platforms from './components/Platforms';
 
 export default function Home() {
+    const menuItems = [
+        "Profile",
+        "Dashboard",
+        "Activity",
+        "Analytics",
+        "System",
+        "Deployments",
+        "My Settings",
+        "Team Settings",
+        "Help & Feedback",
+        "Log Out",
+    ];
     return (
         // <main className="flex min-h-screen flex-col items-center justify-between p-24">
         //   <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -112,9 +128,8 @@ export default function Home() {
         //   </div>
         // </main>
         <>
-            <nav>
+            <Navbar />
 
-            </nav>
 
             <main>
                 <section id='jumbotron'>
@@ -212,31 +227,360 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id='portfolio'>
+                <section id='portfolio' className='grid gap-y-5 py-5'>
+                    <div className='grid grid-cols-2 gap-2.5 p-5'>
+                        <Link href='/'>
+                            <div className='h-40 relative'>
+                                <Image
+                                    src="https://gits.id/wp-content/uploads/2023/10/darmo-768x576.png"
+                                    alt="Impact GITS.ID"
+                                    className="object-cover w-full h-full"
+                                    width={1289}
+                                    height={779}
+                                />
+                                <div className='bg-[#0000001A] absolute w-full h-full top-0 left-0' />
 
+                            </div>
+                            <p className='text-xs text-black1 font-semibold'>Healthcare Service Application for Doctors</p>
+                        </Link>
+                        <Link href='/'>
+                            <div className='h-40 relative'>
+                                <Image
+                                    src="https://gits.id/wp-content/uploads/2023/10/Prodia-Shot-1-768x576.png"
+                                    alt="Impact GITS.ID"
+                                    className="object-cover w-full h-full"
+                                    width={1289}
+                                    height={779}
+                                />
+                                <div className='bg-[#0000001A] absolute w-full h-full top-0 left-0' />
+                            </div>
+                            <p className='text-xs text-black1 font-semibold'>Healthcare Service Application for Doctors</p>
+                        </Link>
+                        <Link href='/'>
+                            <div className='h-40 relative'>
+                                <Image
+                                    src="https://gits.id/wp-content/uploads/2023/10/KF-768x576.png"
+                                    alt="Impact GITS.ID"
+                                    className="object-cover w-full h-full"
+                                    width={1289}
+                                    height={779}
+                                />
+                                <div className='bg-[#0000001A] absolute w-full h-full top-0 left-0' />
+                            </div>
+                            <p className='text-xs text-black1 font-semibold'>Healthcare Service Application for Doctors</p>
+                        </Link>
+                        <Link href='/'>
+                            <div className='h-40 relative'>
+                                <Image
+                                    src="https://gits.id/wp-content/uploads/2023/10/NAV-Investment-tools-768x576.png"
+                                    alt="Impact GITS.ID"
+                                    className="object-cover w-full h-full"
+                                    width={1289}
+                                    height={779}
+                                />
+                                <div className='bg-[#0000001A] absolute w-full h-full top-0 left-0' />
+                            </div>
+                            <p className='text-xs text-black1 font-semibold'>Healthcare Service Application for Doctors</p>
+                        </Link>
+                        <Link href='/'>
+                            <div className='h-40 relative'>
+                                <Image
+                                    src="https://gits.id/wp-content/uploads/2023/10/Prime-768x576.png"
+                                    alt="Impact GITS.ID"
+                                    className="object-cover w-full h-full"
+                                    width={1289}
+                                    height={779}
+                                />
+                                <div className='bg-[#0000001A] absolute w-full h-full top-0 left-0' />
+                            </div>
+                            <p className='text-xs text-black1 font-semibold'>Healthcare Service Application for Doctors</p>
+                        </Link>
+                        <Link href='/'>
+                            <div className='h-40 relative'>
+                                <Image
+                                    src="https://gits.id/wp-content/uploads/2023/10/FFI-Safety-Quisionare-768x576.png"
+                                    alt="Impact GITS.ID"
+                                    className="object-cover w-full h-full"
+                                    width={1289}
+                                    height={779}
+                                />
+                                <div className='bg-[#0000001A] absolute w-full h-full top-0 left-0' />
+                            </div>
+                            <p className='text-xs text-black1 font-semibold'>Healthcare Service Application for Doctors</p>
+                        </Link>
+                    </div>
+
+                    <Button className='mx-5' variant='light' color='primary' radius='none'><span className='font-bold'>See All</span></Button>
                 </section>
 
-                <section id='services'>
-
-                </section>
+                <Services />
 
                 <section id='testimonial'>
 
                 </section>
 
-                <section id='contactUs'>
+                <section id='contactUs' className='px-5'>
+                    <div className='grid gap-y-5 pt-5'>
+                        <div className='grid gap-5'>
+                            <p className='uppercase text-sm text-neutral2'>contact us</p>
+                            <h2 className='text-4xl text-black1 font-bold'>Do you have a new project?</h2>
+                            <p className='mb-4 text-neutral1 text-sm'>Come tell us what you need! Fill out this form and our solution team will response to your email by maximum of 1×24 workday.</p>
 
+                            <div className='grid gap-y-5'>
+                                {/* INDONESIA */}
+                                <div className='grid gap-y-5'>
+                                    <h2 className='text-black3 text-xl font-bold'>Indonesia</h2>
+                                    <div className='grid'>
+                                        <i className="ri-map-2-line ri-xl mb-3"></i>
+                                        <p className='text-black1 font-semibold'>Head Office</p>
+                                        <p className='text-neutral3 text-sm'>Summarecon Bandung, Jl. Magna Timur No.106, Bandung, 40296</p>
+                                    </div>
+                                    <div className='grid'>
+                                        <i className="ri-mail-line ri-xl mb-3"></i>
+                                        <p className='text-black1 font-semibold'>E-mail</p>
+                                        <p className='text-tertiary text-sm font-bold'>connect@gits.id</p>
+                                    </div>
+                                    <div className='grid'>
+                                        <i className="ri-phone-line ri-xl mb-3"></i>
+                                        <p className='text-black1 font-semibold mt-2 mb-2.5'>Whatsapp (chat only)</p>
+                                        <p className='text-tertiary text-sm font-bold'>0811-1309-991</p>
+                                    </div>
+                                </div>
+
+                                {/* NORTH AMERICA */}
+                                <div className='grid gap-y-5'>
+                                    <h2 className='text-black3 text-xl font-bold'>North America</h2>
+                                    <div className='grid'>
+                                        <i className="ri-map-2-line ri-xl mb-3"></i>
+                                        <p className='text-black1 font-semibold'>Branch Office</p>
+                                        <p className='text-neutral3 text-sm'>166 Geary Str STE 1500 #1368, San Francisco, CA 94108, United States</p>
+                                    </div>
+                                    <div className='grid'>
+                                        <i className="ri-mail-line ri-xl mb-3"></i>
+                                        <p className='text-black1 font-semibold'>E-mail</p>
+                                        <p className='text-tertiary text-sm font-bold'>connect-usa@gits.id</p>
+                                    </div>
+                                </div>
+
+                                <iframe className='h-48 rounded-lg' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4219905126747!2d107.68702657367213!3d-6.959445493040959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e86f22f9a59b%3A0x118df4f3a9d3f497!2sGITS.ID%20(PT%20GITS%20Indonesia)!5e0!3m2!1sen!2sid!4v1702405414280!5m2!1sen!2sid" width="100%" height="auto" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <div className='pt-5'>
+                            <div className='mb-7'>
+                                <Input type="text" variant='underlined' label="Your Name" />
+                            </div>
+                            <div className='mb-7'>
+                                <Input type="email" variant='underlined' label="Email Adress" />
+                            </div>
+                            <div className='mb-7'>
+                                <Input type="number" variant='underlined' label="Phone Number" />
+                            </div>
+                            <div className='mb-7'>
+                                <Input type="text" variant='underlined' label="Company" />
+                            </div>
+                            <div className='grid mb-7'>
+                                <Textarea
+                                    variant='underlined'
+                                    placeholder="Message"
+                                    className='mb-7'
+                                />
+                                <Button color='primary' radius='none' size='lg' className='h-14'>Send</Button>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section id='platform'>
 
                 </section>
 
-                <section id='partner'>
+                <Platforms />
 
+                <section id='partner' className='my-10 py-5'>
+                    <div className='px-5 grid gap-y-5'>
+                        <p className='uppercase text-sm text-neutral2'>partner</p>
+                        <h2 className='text-4xl text-black1 font-bold'>Official System Integrator of</h2>
+
+                        <div className='w-full h-3'>
+                        </div>
+                    </div>
+
+                    <div className='grid gap-2.5'>
+                        <div className='w-full h-full'>
+                            <Image
+                                src="https://gits.id/wp-content/uploads/2023/11/Partner-google-cloud.png"
+                                alt="Google Cloud"
+                                className="w-[240px] h-auto grayscale"
+                                width={679}
+                                height={212}
+                            />
+                        </div>
+                        <div className='w-full h-full'>
+                            <Image
+                                src="https://gits.id/wp-content/uploads/2023/11/Partner-zendesk.png"
+                                alt="Zendesk"
+                                className="w-[240px] h-auto grayscale"
+                                width={679}
+                                height={212}
+                            />
+                        </div>
+                        <div className='w-full h-full'>
+                            <Image
+                                src="https://gits.id/wp-content/uploads/2023/11/Partner-salesforce.png"
+                                alt="Sales Force"
+                                className="w-[240px] h-auto grayscale"
+                                width={679}
+                                height={212}
+                            />
+                        </div>
+                    </div>
                 </section>
 
-                <section id='achievement'>
+                <section id='achievement' className='p-5 my-10 grid gap-y-5'>
+                    <div className='grid gap-5'>
+                        <div className='grid gap-2.5'>
+                            <p className='uppercase text-sm text-neutral2'>Our Achievement</p>
+                            <h2 className='text-4xl text-black1 font-bold'>Certifications</h2>
+                        </div>
+                        <p className='mb-4 text-neutral1 text-sm'>Our company and team are having stand out expertise to be able to deliver you the best solutions.</p>
+
+                        <div className='grid justify-items-end'>
+                            <Button variant='light' endContent={<i className="ri-arrow-right-line ri-sm text-neutral1"></i>}><span className='font-semibold text-sm'>About Us</span></Button>
+                        </div>
+                    </div>
+
+                    <div className='grid grid-cols-2'>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/01/Group-16602.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>ISO 27001 - Information Security Management Certified</p>
+                        </div>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/01/Group-16603.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>ISO 9001 - Certified Company</p>
+                        </div>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/image-180.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Professional Cloud Architect</p>
+                        </div>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/image-181.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Professional Collaboration Engineer</p>
+                        </div>
+                    </div>
+
+                    <div className='grid grid-cols-2'>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/image-182.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Professional Data Engineer</p>
+                        </div>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/image-183.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Professional Cloud Engineer</p>
+                        </div>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/image-184.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Professional Scrum Product Owner</p>
+                        </div>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/image-185.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Professional Scrum Master</p>
+                        </div>
+                    </div>
+
+                    <div className='grid grid-cols-2'>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/image-186.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Associate Android Developer</p>
+                        </div>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/Group-1000001783.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Badan Nasional Sertifikasi Profesi</p>
+                        </div>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/GCA.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Google Developer Agency Program</p>
+                        </div>
+                        <div>
+                            <Image
+                                className='h-auto w-2/5 mb-1.5'
+                                src="https://gits.id/wp-content/uploads/2023/10/image-188.png"
+                                alt="Certificate"
+                                width={123}
+                                height={123}
+                            />
+                            <p className='mb-3.5 text-black3 text-xs font-bold'>Google Certified Educator</p>
+                        </div>
+                    </div>
+
+                    <iframe className='h-48 rounded-xl' width="100%" height="auto" src="https://www.youtube.com/embed/aqipM3m2sq8?si=kuJdCClp7dOZiQ1S" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
 
                 </section>
 
@@ -247,8 +591,90 @@ export default function Home() {
 
             </main>
 
-            <footer>
+            <footer className='bg-[#141414] p-4 py-4 grid'>
+                <div className='p-2.5'>
+                    <div className='w-fit h-full'>
+                        <div className='w-4/5'>
+                            <Image
+                                src="https://gits.id/wp-content/uploads/2023/10/Group-13253.png"
+                                alt="Certificate"
+                                width={115}
+                                height={52}
+                            />
+                        </div>
+                    </div>
+                </div>
 
+                <div className='grid gap-2.5 p-2.5'>
+                    <h2 className='text-white font-bold'>Indonesia</h2>
+                    <p className='mb-3.5 text-neutral4 text-sm'>Summarecon Bandung<br />Jl. Magna Timur No.106 Bandung 40296</p>
+                    <p className='mb-3.5 text-neutral4 text-sm'>connect@gits.id<br />+62811-1309-991</p>
+                </div>
+
+                <div className='grid gap-2.5 p-2.5'>
+                    <h2 className='text-white font-bold'>North America Branch</h2>
+                    <p className='mb-3.5 text-neutral4 text-sm'>166 Geary Str STE 1500 #1368 San Francisco, CA 94108 United States</p>
+                    <p className='mb-3.5 text-neutral4 text-sm'>connect-usa@gits.id</p>
+                </div>
+
+                <div className='grid p-2.5'>
+                    <h2 className='text-white font-bold'>Get In Touch</h2>
+                    <div className='pt-2.5 grid'>
+                        <Input className='mb-1.5' size='sm' type="email" variant={'flat'} radius='none' label="Email" />
+                        <Button className='' radius='none' color='primary'><span className='font-bold'>Subscribe</span></Button>
+                    </div>
+                    <div className='flex py-1.5 gap-x-1.5'>
+                        <div className='h-10 w-10 grid items-center justify-items-center rounded-full border border-[#1D2939]'>
+                            <i className="ri-linkedin-box-fill ri-1x text-[#8A8E9B]"></i>
+                        </div>
+                        <div className='h-10 w-10 grid items-center justify-items-center rounded-full border border-[#1D2939]'>
+                            <i className="ri-youtube-fill ri-1x text-[#8A8E9B]"></i>
+                        </div>
+                        <div className='h-10 w-10 grid items-center justify-items-center rounded-full border border-[#1D2939]'>
+                            <i className="ri-medium-fill ri-1x text-[#8A8E9B]"></i>
+                        </div>
+                        <div className='h-10 w-10 grid items-center justify-items-center rounded-full border border-[#1D2939]'>
+                            <i className="ri-facebook-fill ri-1x text-[#8A8E9B]"></i>
+                        </div>
+                        <div className='h-10 w-10 grid items-center justify-items-center rounded-full border border-[#1D2939]'>
+                            <i className="ri-twitter-x-fill ri-1x text-[#8A8E9B]"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 className='text-white font-bold pb-2'>Subsidiaries</h2>
+                        <div className='pt-1.5 grid gap-2.5'>
+                            <h2 className='text-neutral4 text-sm font-bold'>Eudeka</h2>
+                            <h2 className='text-neutral4 text-sm font-bold'>Mofin</h2>
+                            <h2 className='text-neutral4 text-sm font-bold'>Brandbud</h2>
+                            <h2 className='text-neutral4 text-sm font-bold'>MuslimLife</h2>
+                        </div>
+                        <div className='pt-1.5 grid gap-2.5'>
+                            <h2 className='text-neutral4 text-sm font-bold'>Carte</h2>
+                            <h2 className='text-neutral4 text-sm font-bold'>Part of Digits</h2>
+                        </div>
+                    </div>
+
+                    <Divider className="my-4" />
+                </div>
+
+                {/* COPYRIGHT */}
+                <div>
+                    <div className='p-2.5 grid gap-5 text-center'>
+                        <h2 className='text-xs text-neutral4'>© GITS Indonesia 2008 - 2023</h2>
+                        <h2 className='text-xs text-neutral4 font-bold'>Privacy & Policy</h2>
+                        <h2 className='text-xs text-neutral4 font-bold'>Information Management System Policy</h2>
+                    </div>
+
+                    <div className='p-2.5 flex justify-between'>
+                        <h2 className='text-xs text-neutral4 font-bold'>Our Work</h2>
+                        <h2 className='text-xs text-neutral4 font-bold'>Solution</h2>
+                        <h2 className='text-xs text-neutral4 font-bold'>Career</h2>
+                        <h2 className='text-xs text-neutral4 font-bold'>About</h2>
+                        <h2 className='text-xs text-neutral4 font-bold'>Insight</h2>
+                        <h2 className='text-xs text-neutral4 font-bold'>Blog</h2>
+                    </div>
+                </div>
             </footer>
         </>
     )

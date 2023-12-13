@@ -18,10 +18,14 @@ const config: Config = {
       colors: {
         primary: '#28a0f6',
         secondary: '#7EC5FB',
+        tertiary: '#6EC1E4',
         black1: '#101828',
         black2: '#333',
+        black3: '#353D49',
         neutral1: '#7A7A7A',
-        neutral2: '#475467'
+        neutral2: '#475467',
+        neutral3: '#667085',
+        neutral4: '#98A2B3'
       }
     },
   },
