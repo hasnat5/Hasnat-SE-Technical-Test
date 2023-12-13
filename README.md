@@ -10,7 +10,6 @@
 #### Soal no. 3 Frontend 
 - Navbar Animation
 - Slider with button
-- Responsive design
 
 
 ## Demo
