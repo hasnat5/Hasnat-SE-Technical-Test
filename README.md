@@ -7,10 +7,13 @@
 
 ## Features
 
-#### Soal no. 3 Frontend 
+#### Soal no 3 Frontend 
 - Navbar Animation
 - Slider with button
 
+## Live Preview no 3 frontend (MOBILE ONLY)
+
+[hasnat-clone-gitsid](https://hasnat-se-technical-test.vercel.app/)
 
 ## Demo
 
@@ -22,6 +25,11 @@
 ![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/dev/demo-image/soal2.png?raw=true)
 
 #### Soal no 3
+
+Kode memiliki dua kompleksitas utama yakni perulangan dan operasi pada tumpukan. 
+
+Tingkat kompleksitas O(n) yang berarti akan berbanding lurus dengan banyaknya data. Sering disebut dengan tingkat kompleksitas linear atau aritmatika.
+
 ![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/dev/demo-image/soal3.png?raw=true)
 
 #### Soal no 3 frontend (MOBILE ONLY)
