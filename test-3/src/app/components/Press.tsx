@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import Autoplay from "swiper";
+// import Autoplay from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -35,11 +35,11 @@ const Press = () => {
             spaceBetween={10}
             // transitionTimingFunction={'linear'}
             loop={true}
-            autoplay={{
-                delay: 1,
-                disableOnInteraction: false
-            }}
-            modules={[Autoplay]}
+        // autoplay={{
+        //     delay: 1,
+        //     disableOnInteraction: false
+        // }}
+        // modules={[Autoplay]}
         >
             {partnerItem.map((data, key) => {
                 return (
@@ -48,7 +48,7 @@ const Press = () => {
                         style={{ transitionTimingFunction: 'linear' }}
                         className='w-fit'>
                         <div
-                            className="border border-neutralGrey w-32 h-10 my-5 flex items-center justify-center mx-auto lg:mx-5"
+                            className="border border-neutralGrey w-32 h-10 my-5 flex items-center justify-center mx-auto"
                         >
                             <Image
                                 src={data.img}
