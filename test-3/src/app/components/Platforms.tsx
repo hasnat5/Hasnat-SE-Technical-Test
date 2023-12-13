@@ -32,7 +32,7 @@ const Platforms = () => {
             <div >
                 <div className='p-2.5 grid gap-y-5'>
                     <p className='uppercase text-sm text-neutral2'>platforms</p>
-                    <h2 className='text-4xl text-black1 font-bold'>Get the best IT Service & Solution</h2>
+                    <h2 className='text-4xl text-black1 font-bold'>5 Ready to use platform</h2>
                 </div>
 
                 <div className='p-2.5 flex gap-x-4'>
@@ -48,6 +48,7 @@ const Platforms = () => {
                 className={'mySwiper'}
                 style={{ display: 'flex', alignItems: 'center', overflow: 'hidden', width: '100%' }}
                 ref={SlideRef}
+                loop={true}
                 // onSlideChange={onSlideChange}
                 navigation={false}
                 modules={[Navigation]}
