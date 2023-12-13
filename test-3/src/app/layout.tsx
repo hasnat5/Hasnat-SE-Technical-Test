@@ -9,6 +9,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'GITS.ID',
   description: 'Landing page clone gits.id by hasnat',
+  authors: { name: "Hasnat Ferdiananda", url: "https://hasnat.fun" }
 }
 
 export default function RootLayout({

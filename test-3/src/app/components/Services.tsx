@@ -80,13 +80,13 @@ const Services = () => {
                 <SwiperSlide>
                     <div className='p-7 grid'>
                         <Image
-                            src="/assets/images/services/applicationModernization.svg"
+                            src="/assets/images/services/digitalConsultancy.svg"
                             alt="services"
                             width={60}
                             height={60}
                         />
-                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Application Modernization</h2>
-                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>We Modernize your app to be scalable, easy to be maintained, and be enriched.</p>
+                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Digital Consultancy</h2>
+                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>We can help finding what problems your app have or guiding you to start to have the best solution app for your company & your customer.</p>
                         <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
                     </div>
                 </SwiperSlide>
@@ -100,6 +100,45 @@ const Services = () => {
                         />
                         <h2 className='font-bold text-black1 text-xl mt-2.5'>Application Modernization</h2>
                         <p className='text-sm text-neutral3 mt-2.5 mb-4'>We Modernize your app to be scalable, easy to be maintained, and be enriched.</p>
+                        <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='p-7 grid '>
+                        <Image
+                            src="/assets/images/services/cloudManageService.svg"
+                            alt="services"
+                            width={60}
+                            height={60}
+                        />
+                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Cloud Managed Service</h2>
+                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>Secure your data and enable fast processing on application, to reduce cost and improve operational efficiency.</p>
+                        <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='p-7 grid '>
+                        <Image
+                            src="/assets/images/services/dataMachineLearning.svg"
+                            alt="services"
+                            width={60}
+                            height={60}
+                        />
+                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Data & Machine Learning</h2>
+                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>We help on enable you to take better decisions based on your data. Have it managed and generate insights from it.</p>
+                        <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='p-7 grid '>
+                        <Image
+                            src="/assets/images/services/dataMachineLearning.svg"
+                            alt="services"
+                            width={60}
+                            height={60}
+                        />
+                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Digital Workspace</h2>
+                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>Flexible, secure and cost-effective innovation solutions, for teams and companies to achieve more.</p>
                         <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
                     </div>
                 </SwiperSlide>

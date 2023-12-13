@@ -81,29 +81,69 @@ const Platforms = () => {
                 <SwiperSlide>
                     <div className='p-7 grid'>
                         <Image
-                            src="/assets/images/services/applicationModernization.svg"
-                            alt="services"
+                            src="/assets/images/platforms/crowdFunding.svg"
+                            alt="platforms"
                             width={60}
                             height={60}
                         />
-                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Application Modernization</h2>
-                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>We Modernize your app to be scalable, easy to be maintained, and be enriched.</p>
+                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Crowdfunding Platform</h2>
+                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>Enable your social cause reach wider donators, with your own fundraising app</p>
                         <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='p-7 grid '>
+                    <div className='p-7 grid'>
                         <Image
-                            src="/assets/images/services/applicationModernization.svg"
-                            alt="services"
+                            src="/assets/images/platforms/commerce.svg"
+                            alt="platforms"
                             width={60}
                             height={60}
                         />
-                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Application Modernization</h2>
-                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>We Modernize your app to be scalable, easy to be maintained, and be enriched.</p>
+                        <h2 className='font-bold text-black1 text-xl mt-2.5'>E-Commerce Platform</h2>
+                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>Easier inventory management and get full report of your store transactions</p>
                         <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div className='p-7 grid'>
+                        <Image
+                            src="/assets/images/platforms/corporateBudgeting.svg"
+                            alt="platforms"
+                            width={60}
+                            height={60}
+                        />
+                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Corporate Budgeting Platform</h2>
+                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>Seamlessly integrated to your existing system, also gives budget forecasting</p>
+                        <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='p-7 grid'>
+                        <Image
+                            src="/assets/images/platforms/eventManagement.svg"
+                            alt="platforms"
+                            width={60}
+                            height={60}
+                        />
+                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Event Management</h2>
+                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>Facilitate seamless event creation, participant engagement, and brand launch announcements</p>
+                        <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='p-7 grid'>
+                        <Image
+                            src="/assets/images/platforms/multiMerchant.svg"
+                            alt="platforms"
+                            width={60}
+                            height={60}
+                        />
+                        <h2 className='font-bold text-black1 text-xl mt-2.5'>Multi-Merchant Platform</h2>
+                        <p className='text-sm text-neutral3 mt-2.5 mb-4'>Manage your merchants, improve cost efficiency using AI-powered stock management</p>
+                        <p className='mt-2.5 text-black1 text-sm font-bold'>Learn More</p>
+                    </div>
+                </SwiperSlide>
+
             </Swiper>
 
             {/* <div>

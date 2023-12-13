@@ -5,6 +5,7 @@ import 'remixicon/fonts/remixicon.css'
 import Navbar from './components/Navbar';
 import Services from './components/Services';
 import Platforms from './components/Platforms';
+import Press from './components/Press';
 
 export default function Home() {
     const menuItems = [
@@ -584,10 +585,23 @@ export default function Home() {
 
                 </section>
 
-                <section id='pressRelease'>
+                <section id='pressRelease' className='px-5 my-10'>
+                    <div className='py-5 grid gap-y-5'>
+                        <p className='uppercase text-sm text-neutral2'>press release</p>
+                        <h2 className='text-4xl text-black1 font-bold'>We have been covered by</h2>
 
+                        <div className='w-full h-3'>
+                        </div>
+
+                        <div className="w-full grid">
+                            <Press />
+                        </div>
+                    </div>
                 </section>
 
+                <section id='cta end' className='grid py-10'>
+                    <Button className='mx-5' variant='light' color='primary' radius='none'><span className='font-bold'>Consult with Us</span></Button>
+                </section>
 
             </main>
 
