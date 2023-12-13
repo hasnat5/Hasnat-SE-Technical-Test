@@ -17,13 +17,16 @@
 
 #### Soal no 1
 
-![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/main/demo-image/soal1.png?raw=true)
+![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/dev/demo-image/soal1.png?raw=true)
 
 #### Soal no 2
-![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/main/demo-image/soal2.png?raw=true)
+![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/dev/demo-image/soal2.png?raw=true)
 
 #### Soal no 3
-![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/main/demo-image/soal3.png?raw=true)
+![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/dev/demo-image/soal3.png?raw=true)
+
+#### Soal no 3 frontend
+![alt text](https://github.com/hasnat5/Hasnat-SE-Technical-Test/blob/dev/demo-image/soal3fe.png?raw=true)
 ## Run Locally
 
 Clone the project
